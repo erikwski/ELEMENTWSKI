@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cccccc;
+  margin-top: 1rem;
+}
+
+.slider {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  background: url(img-1.jpg);
+}
+
+.triangle {
+  /* creo X punti partendo da top-left per creare cordinate e chiudere il poligono */
+  clip-path: polygon(50% 0, 20% 100%, 80% 100%);
+}
+.hexagon {
+  clip-path: polygon(
+    33.33333% 0,
+    66.66666% 0,
+    100% 33.33333%,
+    100% 66.66666%,
+    66.66666% 100%,
+    33.33333% 100%,
+    0 66.66666%,
+    0 33.33333%
+  );
+}
